@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <display-name>Search_App</display-name>
+ <welcome-file-list>
+   <welcome-file>index.html</welcome-file>
+ </welcome-file-list>
+ <filter>
+    <filter-name>User</filter-name>
+      <filter-class>com.inndata.mogames.User</filter-class>
+ </filter>
+ <filter-mapping>
+     <filter-name>User</filter-name>
+    <url-pattern>/user</url-pattern>
+ </filter-mapping>
+ <servlet>  
+    <servlet-name>GetCampaigns</servlet-name>  
+    <servlet-class>com.inndata.mogames.GetCampaigns</servlet-class>  
+ </servlet>  
+ <servlet-mapping>  
+    <servlet-name>GetCampaigns</servlet-name>  
+    <url-pattern>/getcampaigns</url-pattern>  
+ </servlet-mapping>
+ <servlet>  
+    <servlet-name>Import_camp</servlet-name>  
+    <servlet-class>com.inndata.mogames.Import_camp</servlet-class>  
+ </servlet>  
+ <servlet-mapping>  
+    <servlet-name>Import_camp</servlet-name>  
+    <url-pattern>/import_camp</url-pattern>  
+ </servlet-mapping> 
+ <servlet>  
+    <servlet-name>Import</servlet-name>  
+    <servlet-class>com.inndata.mogames.Import</servlet-class>  
+ </servlet>  
+ <servlet-mapping>  
+    <servlet-name>Import</servlet-name>  
+    <url-pattern>/import</url-pattern>  
+ </servlet-mapping>
+</web-app>
